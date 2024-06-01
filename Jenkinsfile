@@ -24,6 +24,12 @@ pipeline {
               sh 'mvn package'    
                 }
         }
+
+         stage('clean') {
+            steps {
+              sh 'mvn clean'    
+                }
+        }
         
     }
 }
