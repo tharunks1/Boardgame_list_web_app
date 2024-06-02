@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('Git') {
+        stage('Git') { 
             steps {
                 git branch: 'main', url: 'https://github.com/jaiswaladi246/Boardgame.git'     
                 }
